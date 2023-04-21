@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView to display the current time remaining for the workout phase -->
+    <TextView
+        android:id="@+id/workout_timer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:text="Workout Time: 00:00" />
+
+    <!-- EditText to allow the user to set the duration of the workout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:text="Set Workout Duration (Seconds)" />
+
+    <!-- TextView to display the current time remaining for the rest phase -->
+
+    <EditText
+        android:id="@+id/workoutEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Duration"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:backgroundTint="@color/light_grey"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:id="@+id/rest_timer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:text="Rest Time: 00:00" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:text="Set Rest Duration (Seconds)" />
+
+    <!-- EditText to allow the user to set the duration of the rest periods -->
+    <EditText
+        android:id="@+id/rest_duration_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Duration"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:backgroundTint="@color/light_grey"
+        android:imeOptions="actionDone"/>
+
+    <!-- ProgressBar to show the progress of the current phase -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"/>
+
+    <!-- Button to start the timer -->
+
+    <!-- Button to stop the timer -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_bg"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_bg"
+        android:text="Stop"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
